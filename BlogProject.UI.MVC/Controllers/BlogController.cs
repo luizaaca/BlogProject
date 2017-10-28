@@ -17,7 +17,7 @@ namespace BlogProject.UI.MVC.Controllers
             if (posts.Count() > 0)
             {
                 ViewData["AllPosts"] = posts;
-                ViewData["LatestPosts"] = Post.FindLatestPost();
+                ViewData["LatestPost"] = Post.FindLatestPost();
                 return View();
             }
             else

@@ -1,0 +1,18 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Create", "Blog", FormMethod.Post))
+{
+    <p>
+        Subject<br />
+        @Html.TextBox("Subject")
+    </p>
+    <p>
+        Content<br />
+        @Html.TextArea("Content")
+    </p>
+    <p>
+        <input type="submit" value="Create" />
+    </p>
+}
